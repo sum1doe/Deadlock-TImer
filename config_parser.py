@@ -4,11 +4,11 @@ try:
 except FileNotFoundError:
     print("Creating cfg file")
     cfg = open("config.txt", "w+")
-    config_string = "[Keys]\ntimer_reset:96\ntimer_pause:97\noverlay_hide:99\nscroll_activation:46\n"
+    config_string = "[Keys]\ntimer_reset:96\ntimer_pause:97\noverlay_hide:99\nscroll_activation:46\n\n"
     config_string += "[Positions]\nscreen_size_x:1600\nscreen_size_y:900\ntimer_x:935\ntimer_y:20\nmessage_x:800\nmessage_y:300\n"
     cfg.write(config_string)
     cfg.close()
-    cfg = config_string
+    cfg = config_string.split("\n")
     
 finally:
     dict_sub_string = ""

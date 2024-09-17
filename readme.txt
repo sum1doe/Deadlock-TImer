@@ -12,7 +12,7 @@ How to use:
  - At the top, there is a Run tab (next to File, 4th option over). Click that, and then "Run Module". Alternatively just hit f5 while in the window.
  - Currently, the program should just run, assuming you meet all the requirements.
  - To close, you'll need to stop running the code, by closing the shell window. Ctrl + C in the shell works too, but is may be unstable.
- - Optionally, go through the code and find out which keys map to what, and change them as you see fit.
+ - Optionally, edit the config.txt file and restart the code.
 
 Default Keybindings:
  - Numpad 0 resets the timer.
