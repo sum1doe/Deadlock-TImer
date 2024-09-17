@@ -10,6 +10,7 @@ from pynput import mouse
 import ctypes
 
 from message_gen import relevant_message
+from config_parser import config as user_config
 
 awareness = ctypes.c_int()
 errorCode = ctypes.windll.shcore.GetProcessDpiAwareness(0, ctypes.byref(awareness))
@@ -23,7 +24,7 @@ print(errorCode)
 environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (0, 0)
 
 pygame.init()
-wx, wy = 1600,900
+wx, wy = user_config["Positions"]["screen_size_x"],user_config["Positions"]["screen_size_y"]
 
 screen = pygame.display.set_mode((wx,wy), pygame.NOFRAME) # For borderless, use pygame.NOFRAME
 
@@ -85,35 +86,35 @@ while not done:
             done = True
             
     #Num0 96 for reset
-    if isKeyPressed(96):
+    if isKeyPressed(user_config["Keys"]["timer_reset"]):
         start = pygame.time.get_ticks()
         
     #Num1 97 for pause/play
-    if not isKeyPressed(97):
+    if not isKeyPressed(user_config["Keys"]["timer_pause"]):
         Num1Pressed = False
     
     # Check that key has been unpressed, and state is currently unpaused
-    if not Num1Pressed and unpaused and isKeyPressed(97):
+    if not Num1Pressed and unpaused and isKeyPressed(user_config["Keys"]["timer_pause"]):
         offset = current_time
         unpaused = False
         Num1Pressed = True
         
-    if not Num1Pressed and not unpaused and isKeyPressed(97):
+    if not Num1Pressed and not unpaused and isKeyPressed(user_config["Keys"]["timer_pause"]):
         start = pygame.time.get_ticks()-offset
         unpaused = True
         Num1Pressed = True
         
     #Num3 99 for toggle overlay
-    if not isKeyPressed(99):
+    if not isKeyPressed(user_config["Keys"]["overlay_hide"]):
         Num3Pressed = False
         
-    if not Num3Pressed and isKeyPressed(99):
+    if not Num3Pressed and isKeyPressed(user_config["Keys"]["overlay_hide"]):
         showhud = not showhud
         Num3Pressed = True
         
     
     #Delete 46 for chording with scroll
-    modPressed = isKeyPressed(46)
+    modPressed = isKeyPressed(user_config["Keys"]["scroll_activation"])
     
     #MMB 4 for something happened.
     
@@ -128,8 +129,8 @@ while not done:
     message_obj = number_font.render(relevant_message((offset, current_time)[unpaused]), False, (255,255,255))
     if showhud:
         #pygame.draw.rect(screen, (dark_red, blue)[isKeyPressed(65)], pygame.Rect(0, 0, 60, 60))
-        screen.blit(timer_obj, (935, 20))
-        screen.blit(message_obj, (800,300))
+        screen.blit(timer_obj, (user_config["Positions"]["timer_x"], user_config["Positions"]["timer_y"]))
+        screen.blit(message_obj, (user_config["Positions"]["message_x"], user_config["Positions"]["message_y"]))
     
     pygame.display.update()
     
