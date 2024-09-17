@@ -7,6 +7,7 @@ def isKeyPressed(key):
     
     return (win32api.GetAsyncKeyState(key) & (1 << 15)) != 0
 
+prev_lst = [False for i in range(1024)]
 
 while True:
     lst = [isKeyPressed(i) for i in range(1024)]

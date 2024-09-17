@@ -95,8 +95,6 @@ Num3Pressed = False
 showhud = True
 active = False
 
-prev_lst = [False for i in range(1024)]
-
 mouse_listener = mouse.Listener(on_scroll = on_mouse_scroll)
 mouse_listener.start()
 
