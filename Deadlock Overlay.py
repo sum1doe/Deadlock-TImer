@@ -143,12 +143,12 @@ while not done:
     current_time = pygame.time.get_ticks()-start
     
     
-    number_image = number_font.render(formatms((offset, current_time)[unpaused]), False, (255,255,255))
-    notif = number_font.render(relevant_message((offset, current_time)[unpaused]), False, (255,255,255))
+    timer_obj = number_font.render(formatms((offset, current_time)[unpaused]), False, (255,255,255))
+    message_obj = number_font.render(relevant_message((offset, current_time)[unpaused]), False, (255,255,255))
     if showhud:
         #pygame.draw.rect(screen, (dark_red, blue)[isKeyPressed(65)], pygame.Rect(0, 0, 60, 60))
-        screen.blit(notif, (800,300))
-        screen.blit(number_image, (935, 20))
+        screen.blit(timer_obj, (935, 20))
+        screen.blit(message_obj, (800,300))
     
     pygame.display.update()
     
