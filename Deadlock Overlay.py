@@ -101,10 +101,6 @@ mouse_listener = mouse.Listener(on_scroll = on_mouse_scroll)
 mouse_listener.start()
 
 while not done:
-    #TODO
-    # Add a mouse pull to ping various things happening (to the program)
-    
-    
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             done = True
@@ -159,8 +155,3 @@ while not done:
     pygame.display.update()
     
     clock.tick(15)
-    lst = [isKeyPressed(i) for i in range(1024)]
-    for i in range(1024):
-        if prev_lst[i] != lst[i]:
-            print(i, chr(i))
-    prev_lst = lst
