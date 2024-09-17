@@ -8,7 +8,7 @@ Requirements:
    - ctypes
 
 How to use:
- - Assuming you've just installed python, open the file with "IDLE (Python 3.x.x)".
+ - Assuming you've just installed python, open the "Deadlock Overlay.py" file with "IDLE (Python 3.x.x)".
  - At the top, there is a Run tab (next to File, 4th option over). Click that, and then "Run Module". Alternatively just hit f5 while in the window.
  - Currently, the program should just run, assuming you meet all the requirements.
  - To close, you'll need to stop running the code, by closing the shell window. Ctrl + C in the shell works too, but is may be unstable.
