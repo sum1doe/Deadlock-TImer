@@ -4,8 +4,7 @@
 [ ] Make keybinds.txt/cfg
 [ ] Allow user to move UI elements as well as resize main window
 [X] Make a github page for it, 
- - [ ] with a setup tutorial
+ - [X] with a setup tutorial
 [ ] Let the community decide if it's allowed or not
 [ ] Replace the win32api keypress detection with pynput
 [ ] Allow user to move UI elements as well as resize main window
-[ ] Replace the win32api keypress detection with pynput
