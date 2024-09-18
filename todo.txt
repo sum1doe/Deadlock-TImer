@@ -1,10 +1,11 @@
 #TODO
 [ ] Add a mouse pull to ping various things happening (to the program)
 [ ] Fix windows scaling thingy (or remove ctypes)
-[ ] Make keybinds.txt/cfg
+[X] Make keybinds.txt/cfg
 [ ] Allow user to move UI elements as well as resize main window
 [X] Make a github page for it, 
  - [X] with a setup tutorial
 [ ] Let the community decide if it's allowed or not
 [ ] Replace the win32api keypress detection with pynput
 [ ] Allow user to move UI elements as well as resize main window
+[ ] Add sounds to the timer notifications.
