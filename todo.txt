@@ -2,6 +2,7 @@
 [ ] Add a mouse pull to ping various things happening (to the program)
 [ ] Fix windows scaling thingy (or remove ctypes)
 [X] Make keybinds.txt/cfg
+ - [ ] Keybind to reload settings
 [X] Allow user to move UI elements as well as resize main window
 [X] Make a github page for it, 
  - [X] with a setup tutorial
