@@ -10,4 +10,5 @@
 [ ] Replace the win32api keypress detection with pynput
 [X] Allow user to move UI elements
  - [ ] as well as resize main window
-[ ] Add sounds to the timer notifications.
+[ ] Add sounds to the timer notifications
+[ ] Add a config file for crosshair and the above sound files.
