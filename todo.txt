@@ -12,3 +12,4 @@
  - [ ] as well as resize main window
 [ ] Add sounds to the timer notifications
 [ ] Add a config file for crosshair and the above sound files.
+[ ] Money overlay (requires windows scaling to be fixed
