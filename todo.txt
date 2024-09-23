@@ -12,4 +12,8 @@
  - [ ] as well as resize main window
 [ ] Add sounds to the timer notifications
 [ ] Add a config file for crosshair and the above sound files.
-[ ] Money overlay (requires windows scaling to be fixed
+[ ] Money overlay (requires windows scaling to be fixed)
+ - [ ] Add clickable timer on camps
+ - [ ] option to only show timers while holding alt?
+[ ] Change default modifier to alt.
+[ ] Add toggle options for all gui elements
