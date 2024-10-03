@@ -2,7 +2,6 @@
 [ ] Add a mouse pull to ping various things happening (to the program)
 [ ] Fix windows scaling thingy (or remove ctypes)
 [ ] Let the community decide if it's allowed or not
-[ ] Replace the win32api keypress detection with pynput
 [ ] Add sounds to the timer notifications
 [ ] Add a config file for crosshair and the above sound files.
 [ ] Money overlay (requires windows scaling to be fixed)
@@ -11,11 +10,14 @@
 [ ] Change default modifier to alt.
 [ ] Add toggle options for all gui elements
 
-#Busy With
-
 [X] Allow user to move UI elements
  - [ ] as well as resize main window
 
+#Busy With
+[ ] Replace the win32api keypress detection with pynput
+
+
+#Done
 [X] Allow user to move UI elements as well as resize main window
 [X] Make a github page for it, 
  - [X] with a setup tutorial
