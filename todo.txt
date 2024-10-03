@@ -13,11 +13,11 @@
 
 #Busy With
 
-[X] Make keybinds.txt/cfg
- - [ ] Keybind to reload settings
 [X] Allow user to move UI elements
  - [ ] as well as resize main window
 
 [X] Allow user to move UI elements as well as resize main window
 [X] Make a github page for it, 
  - [X] with a setup tutorial
+[X] Make keybinds.txt/cfg
+ - [X] Keybind to reload settings

@@ -110,6 +110,8 @@ while not done:
         
     if not Num3Pressed and isKeyPressed(user_config["Keys"]["overlay_hide"]):
         showhud = not showhud
+        from config_parser import config as user_config
+        
         Num3Pressed = True
         
     

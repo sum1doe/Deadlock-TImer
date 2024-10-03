@@ -17,5 +17,5 @@ How to use:
 Default Keybindings:
  - Numpad 0 resets the timer.
  - Numpad 1 pauses it.
- - Numpad 3 hides the overlay, and reloads settings on un-hiding.
+ - Numpad 3 hides/shows the overlay, and reloads settings from the config on press.
  - Hold delete and scroll (yes, turn the wheel on your mouse, or if you're on a touchpad, use the 2 finger trick) to adjust the timer by the second.
