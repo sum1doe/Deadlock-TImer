@@ -4,8 +4,9 @@
 [ ] Let the community decide if it's allowed or not
 [ ] Add sounds to the timer notifications
 [ ] Add a config file for crosshair and the above sound files.
-[ ] Money overlay (requires windows scaling to be fixed)
- - [ ] Add clickable timer on camps
+[ ] Money overlay
+ - [ ] Add clickable timer on camps/Displays monetary worth while camp not on cooldown.
+ - [ ] Shade enemy jungle gray after a minute of spawning?
  - [ ] option to only show timers while holding alt?
 [ ] Change default modifier to alt.
 [ ] Add toggle options for all gui elements

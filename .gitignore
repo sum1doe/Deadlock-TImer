@@ -1,3 +1,5 @@
 /test.py
 config.txt
 *.pyc
+testing.py
+.gitignore
